@@ -1,6 +1,10 @@
 export const theme = {
     colors:{
-        bg:"pink",
+        bg:"white",
         color:"green"
+    },
+    responsive:{
+        tab: "",
+        mobile:"",
     }
 }

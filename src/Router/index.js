@@ -4,6 +4,7 @@ import { Home, About, Product, Contact, SingleProduct, Cart, ErrorPage } from ".
 import { GlobalStyle } from "../Style/Global Style";
 import { ThemeProvider } from "styled-components";
 import {theme} from './theme'
+import Header from "../Components/Header";
 export default function MyRoute() {
     // const theme = {
     //     colors: {
@@ -14,6 +15,7 @@ export default function MyRoute() {
         <ThemeProvider theme={theme}>
             <BrowserRouter>
                 <GlobalStyle />
+                <Header />
                 <Routes>
                     <Route path={'/'} element={<Home />} />
                     <Route path={'/about'} element={<About />} />

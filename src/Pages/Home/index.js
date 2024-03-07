@@ -1,16 +1,13 @@
 import React from 'react'
 import styled from "styled-components"
+
 const Home = () => {
   return (
-    <Wrapper>
-      <p className='para'>Home</p>
-    </Wrapper>
+    <Wrapper className='test'>Home</Wrapper>
   )
 }
 
 const Wrapper = styled.section`
-.para{
-  color:pink
-}
+background-color: ${({ theme }) => theme.colors.bg};
 `;
 export default Home
